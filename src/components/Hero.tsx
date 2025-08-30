@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container mx-auto px-5 max-w-6xl">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">Welcome to Lumen</h1>
         <p className="text-xl md:text-2xl mb-8 opacity-90">
-          World's First Data-Driven AI Forecasting Engine
+          World&apos;s First Data-Driven AI Forecasting Engine
         </p>
         <p className="text-lg max-w-3xl mx-auto mb-8 opacity-80 leading-relaxed">
           Revolutionizing grid management with probabilistic forecasting, prescriptive recommendations, 

@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Lumen AI - Data-Driven Grid Forecasting',
-  description: 'World\'s First Data-Driven AI Forecasting Engine for grid management with probabilistic forecasting, prescriptive recommendations, and hyper-local weather modeling.',
+  description: 'World&apos;s First Data-Driven AI Forecasting Engine for grid management with probabilistic forecasting, prescriptive recommendations, and hyper-local weather modeling.',
 }
 
 export default function RootLayout({
