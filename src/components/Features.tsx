@@ -33,20 +33,20 @@ const Features = () => {
   ]
 
   return (
-    <section className="py-20 bg-white" id="features">
-      <div className="container mx-auto px-5 max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white" id="features">
+      <div className="container mx-auto px-4 sm:px-5 max-w-6xl">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-10 sm:mb-12 lg:mb-16 text-gray-800 px-2">
           Core Capabilities
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="bg-white border border-gray-200 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 hover:border-purple-200"
+              className="bg-white border border-gray-200 rounded-lg p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-purple-200 hover:scale-105"
             >
-              <div className="text-4xl mb-4 text-center">{feature.icon}</div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800 text-center">{feature.title}</h3>
-              <p className="text-gray-600 leading-relaxed text-center">{feature.description}</p>
+              <div className="text-3xl sm:text-4xl mb-4 text-center">{feature.icon}</div>
+              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-gray-800 text-center leading-tight">{feature.title}</h3>
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -56,3 +56,4 @@ const Features = () => {
 }
 
 export default Features
+

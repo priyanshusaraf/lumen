@@ -17,25 +17,25 @@ const WordCloud = () => {
   const getSizeClasses = (size: string) => {
     switch (size) {
       case 'large':
-        return 'text-2xl md:text-3xl font-bold text-purple-600'
+        return 'text-xl sm:text-2xl md:text-3xl font-bold text-purple-600'
       case 'medium':
-        return 'text-lg md:text-xl font-semibold text-purple-500'
+        return 'text-base sm:text-lg md:text-xl font-semibold text-purple-500'
       default:
-        return 'text-base md:text-lg font-medium text-gray-600'
+        return 'text-sm sm:text-base md:text-lg font-medium text-purple-400'
     }
   }
 
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="container mx-auto px-5 max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+    <section className="bg-gray-50 py-12 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-5 max-w-6xl">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-800 px-2">
           Powering the Future of Grid Intelligence
         </h2>
-        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
+        <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 px-2">
           {words.map((word, index) => (
             <span 
               key={index} 
-              className={`${getSizeClasses(word.size)} transition-all duration-300 hover:scale-110 cursor-default`}
+              className={`${getSizeClasses(word.size)} transition-all duration-300 hover:scale-110 cursor-default text-center`}
             >
               {word.text}
             </span>
@@ -47,3 +47,4 @@ const WordCloud = () => {
 }
 
 export default WordCloud
+
